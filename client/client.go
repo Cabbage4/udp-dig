@@ -32,8 +32,8 @@ func main() {
 	}
 	serverConn.Close()
 
-	//dealWithUDP(localAddr.String(), string(data[:dataLen]))
-	dealWithTCP(localAddr.String(), string(data[:dataLen]))
+	dealWithUDP(localAddr.String(), string(data[:dataLen]))
+	//dealWithTCP(localAddr.String(), string(data[:dataLen]))
 }
 
 func dealWithUDP(local, remote string) {
